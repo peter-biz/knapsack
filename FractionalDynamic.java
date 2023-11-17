@@ -15,7 +15,7 @@ public class FractionalDynamic {
             }
         }
 
-        return dp[n][(int) capacity];
+        return dp[n][capacity];
     }
 }
 
