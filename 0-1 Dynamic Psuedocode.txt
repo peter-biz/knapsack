@@ -1,0 +1,9 @@
+*** 
+    0/1 version of the knapsack problem: You can only take or not take each item as a whole. 
+1.  For 0/1 version of the problem. Design an algorithm using dynamic programming.
+    Pseudocode is needed. Will this algorithm achieve optimal solution? 
+***
+
+0/1-DYNAMIC-KNAPSACK(items[][], capactiy) {
+
+}

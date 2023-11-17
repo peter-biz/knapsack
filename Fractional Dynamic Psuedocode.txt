@@ -1,0 +1,9 @@
+***
+    Fractional version of the knapsack problem: You can cut each item and take any fraction of it.
+2.  For fractional version of the problem. Design an algorithm using dynamic programming. 
+    Pseudocode is needed if it’s different from algorithm in 1. Will this algorithm achieve optimal solution? 
+***
+
+FRACTIONAL-DYNAMIC-KNAPSACK() {
+
+}

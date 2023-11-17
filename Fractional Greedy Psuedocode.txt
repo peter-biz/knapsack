@@ -1,0 +1,9 @@
+***
+    Fractional version of the knapsack problem: You can cut each item and take any fraction of it.
+4.  For fractional version of the problem. Design an algorithm using greedy algorithm. 
+    Pseudocode is needed if it’s different from algorithm in 3. Will this algorithm achieve optimal solution? 
+***
+
+FRACTIONAL-GREEDY-KNAPSACK() {
+
+}

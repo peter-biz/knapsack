@@ -1,0 +1,9 @@
+***
+    0/1 version of the knapsack problem: You can only take or not take each item as a whole. 
+3.  For 0/1 version of the problem. Design an algorithm using greedy algorithm. 
+    Pseudocode is needed. Will this algorithm achieve optimal solution?
+***
+
+0/1-GREEDY-KNAPSACK() {
+
+}
