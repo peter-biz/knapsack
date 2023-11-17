@@ -4,6 +4,18 @@
     Pseudocode is needed. Will this algorithm achieve optimal solution? 
 ***
 
-0/1-DYNAMIC-KNAPSACK(items[][], capactiy) {
+0/1-DYNAMIC-KNAPSACK(weights[], values[], capactiy) {
+    n = weights.length
+    dp = 2d array size (n+1) x (capactiy+1)
 
+    for i from 0 to n:   // i is the number of items
+        for w from 0 to capacity:   // w is the capacity of the knapsack
+            if i == 0 or w == 0:   // base case
+                dp[i][w] = 0
+            else if weights[i - 1] <= w:   // if the current item can fit in the knapsack
+                dp[i][w] = max(values[i - 1] + dp[i - 1][w - weights[i - 1]], dp[i - 1][w])  // take the max of taking the current item or not taking the current item
+            else: // if the current item cannot fit in the knapsack
+                dp[i][w] = dp[i - 1][w]  // take the value of not taking the current item
+    
+    return dp[n][capacity] // return the value of the knapsack with n items and capacity capacity
 }

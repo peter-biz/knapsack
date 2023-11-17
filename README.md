@@ -1,5 +1,3 @@
-# ahhhh
-
 CS33200 Algorithms
 Project 
 

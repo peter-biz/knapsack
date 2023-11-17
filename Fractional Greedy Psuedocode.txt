@@ -4,6 +4,20 @@
     Pseudocode is needed if it’s different from algorithm in 3. Will this algorithm achieve optimal solution? 
 ***
 
-FRACTIONAL-GREEDY-KNAPSACK() {
+FRACTIONAL-GREEDY-KNAPSACK(weights[], values[], capactiy) {
+    n = weights.length
+    ratio[] = the ration of value to weight for each item
 
+    for i = 0 to n {
+        if weights[i] <= capactiy {
+            result += values[i]
+            capacity -= weights[i]
+        }
+        else{
+            result += ratio[i] * capacity
+            break
+        }
+    }
+
+    return result
 }

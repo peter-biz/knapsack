@@ -5,5 +5,5 @@
 ***
 
 FRACTIONAL-DYNAMIC-KNAPSACK() {
-
+    //The algorithm is the same as the 0-1 knapsack problem, except that we can take any fraction of an item.
 }
