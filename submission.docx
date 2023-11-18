@@ -1,0 +1,4 @@
+1. 0/1 Dynamic will achieve optimal solution some of the time, not all the time.
+2. Fractional dynamic achieve optimal solution some of the time, not all the time.
+3. 0/1 Greedy will not achieve optimal solution most of the time.
+4. Fractional Greedy will always achieve optimal solution.
