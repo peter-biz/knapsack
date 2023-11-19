@@ -56,44 +56,7 @@ public class KnapsackRunner {
             System.out.println();
             count++;
         }
-    
         sc.close();
-
-        //testcases for factional cuz im dumb FIXME: TODO:
-        sc = new Scanner(new File("testinput.txt"));  // input file
-
-        while (sc.hasNextLine()) {  // for each test case
-            String weightsLine = sc.nextLine();
-    
-            // Check for a blank line (end of test case)
-            if (weightsLine.isEmpty()) {
-                continue;
-            }
-    
-            String[] weightsString = weightsLine.split(",");
-            String[] valuesString = sc.nextLine().split(",");
-            int capacity = Integer.parseInt(sc.nextLine());
-
-            // Convert inputs to arrays (fractional)
-            //the inputs are already doubles so we dont need to convert them
-            double[] weightsDouble = Arrays.stream(weightsString).mapToDouble(Double::parseDouble).toArray();
-            double[] valuesDouble = Arrays.stream(valuesString).mapToDouble(Double::parseDouble).toArray();
-
-    
-            // Print test case header
-            System.out.println("(testtest)Test case " + count + ":");
-
-            
-            // Print the max value using fractionalDynamic
-            System.out.println("Fractional Dynamic Test case " + count + ": " + FractionalDynamic.knapsackFractionalDynamic(weightsDouble, valuesDouble, capacity));
-    
-            // Print the max value using fractionalGreedy
-            System.out.println("Fractional Greedy Test case " + count + ": " + FractionalGreedy.knapsackFractionalGreedy(weightsDouble, valuesDouble, capacity));
-            
-            // Print a blank line between each test case
-            System.out.println();
-            count++;
-        }
     }
 }
 
